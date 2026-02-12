@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Laser Based Chip Propulsion
-description:  Microchip handling systems face scaling limitations as chips shrink and production speeds increase: conventional vacuum pick-and-place systems are constrained by nozzle s
+description:  
 skills: 
   - Structural analysis
   - Aerodynamic design
