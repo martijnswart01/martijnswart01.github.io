@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Super Heavy Booster Catch (Demo Only)
+title: Laser Based Chip Propulsion
 description:  
 skills: 
   - Structural analysis
