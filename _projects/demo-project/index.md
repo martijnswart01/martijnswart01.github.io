@@ -11,11 +11,13 @@ skills:
   - Metal forming
   - Thermal simulation
 
-main-image: /project2.jpg
+main-image: /Cover page 3.png
 ---
 
 ---
-# Header 1 
+
+
+# Project statement
 Used for the title (already generated automatically at the top)
 ## Header 2  
 Use this for the header of each section
