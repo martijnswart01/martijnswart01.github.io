@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Laser Based Chip Propulsion
-description:  "Microchip handling systems face scaling limitations as chips shrink and production speeds increase: conventional vacuum pick-and-place systems are constrained by nozzle size and clogging risks. During my research, I developed a new handling method using capillary based water droplets and laser driven propulsion to transfer microchips, designing and experimentally validating a method that converts laser energy into controlled chip propulsion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that significantly increases chip handling speed and can be applied to a wide range of chip sizes. This research is the foundation for a controlled implementation of a water-laser based semiconductor handling system into practice."
+description:  "**Full research under embargo until 14-01-2028, key details may be missing**
+Microchip handling systems face scaling limitations as chips shrink and production speeds increase. Conventional vacuum pick and place systems are constrained by nozzle size and clogging risks, making them infeasible for further scaling. During my research, I developed a new handling method using capillary based water droplets and laser driven propulsion to transfer microchips, designing and experimentally validating a method that converts laser energy into controlled chip propulsion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research is the foundation for a controlled implementation of a water-laser based semiconductor handling system into practice."
 skills: 
   - Micro systems design
   - Multiphysics simulation
@@ -17,9 +18,7 @@ main-image: /Cover page 4.jpg
 ---
 
 
-# Project overview
-**Full research under embargo until 14-01-2028, key details may be missing**
-
+# Problem statement
 As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks.
 
 In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with:
