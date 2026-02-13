@@ -26,18 +26,25 @@ main-image: "/Cover page 4.jpg"
 # Problem statement
 As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks.
 
-In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with:
-
-- Capillary adhesion using a water droplet
-- Laser induced explosive evaporation of the water to propel the chip
+In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip
 
 The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapour inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundry system.
 
 
-## Concept
+## Methodology
+The project combined multiphysics simulation and experimental validation.
+
+A heat transfer model in COMSOL was developed to simulate pulsed Gaussian laser heating interating on the water ranging in parameters. The model mapped temperature evolution and identified the balance between sufficient heating and material damage.
+
+Experimentally, I characterized laser fluence limits. By varying spot size and exposure conditions, I established a safe operating window in which explosive evaporation occurs without system or chip damage. High speed imaging (4000 fps) was used to analyze droplet dynamics and die motion, while post process microscopy was used to validate the surface integrity.
 
 
-### Embeed images
+## Key findings
+For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 10 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. 
+
+## Engineering contribution
+This work bridges thermodynamics, laser–material interaction, and microscale fluid dynamics to establish a physically validated propulsion mechanism. It translates theoretical superheating limits into a practical, experimentally confirmed parameter set suitable for system integration. The results provide a foundation for vacuum-free microchip handling systems and scalable inline propulsion arrays for high-throughput semiconductor manufacturing.
+
 {% include image-gallery.html images="project2.jpg" height="400" %} 
 place the images in project folder/images then update the file path.   
 
