@@ -24,17 +24,10 @@ main-image: "/Cover page 4.jpg"
 
 
 # Problem statement
-As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. A schematic visual representation of the vacuum pick-and-place system is given below.
+As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
 
 
-{% include image-gallery.html images="Vacuum pick and place.png" height="400" %} 
-
-
-
-In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
-
-
-{% include image-gallery.html images="Laser pick and place.png" height="400" %} 
+{% include image-gallery.html images="Laser pick and place.png" height="200" %} 
 
 
 The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapour inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundry system.
