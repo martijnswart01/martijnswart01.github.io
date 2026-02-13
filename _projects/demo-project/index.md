@@ -11,7 +11,7 @@ skills:
   - Opto mechanical design
   - Laser system design
 
-main-image: /Cover page 3.png
+main-image: /Cover page 4.jpg
 ---
 
 ---
