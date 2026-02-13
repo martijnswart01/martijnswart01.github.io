@@ -18,6 +18,8 @@ main-image: /Cover page 3.png
 
 
 # Project overview
+**Full research under embargo until 14-01-2028, key details may be missing**
+
 As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks.
 
 In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with:
