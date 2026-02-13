@@ -2,7 +2,7 @@
 layout: post
 title: Laser Based Chip Propulsion
 description: |
-Full research under embargo until 14/01/2028, key details may be missing
+  **Full research under embargo until 14/01/2028, key details may be missing**
 
   Microchip handling systems face scaling limitations as chips shrink and production speeds increase. Conventional vacuum pick and place systems are constrained by nozzle size and clogging risks, making them infeasible for further scaling. During my research, I developed a new handling method using capillary-based water droplets and laser-driven propulsion to transfer microchips, designing and experimentally validating a method that converts laser energy into controlled chip propulsion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research forms the foundation for controlled implementation of a water–laser-based semiconductor handling system into practice.
 
@@ -17,6 +17,7 @@ skills:
 
 main-image: "/Cover page 4.jpg"
 ---
+
 
 
 ---
