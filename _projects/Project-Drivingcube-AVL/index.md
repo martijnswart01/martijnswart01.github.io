@@ -1,19 +1,20 @@
 ---
 layout: post
-title: Drivingcube AVL for heavy duty trucks
+title: AVL Drivingcube for Heavy Duty Trucks
 description: |
-  Microchip handling systems face scaling limitations as chips shrink and production speeds increase. During my research, I developed a new handling method that combines capillary forces from water droplets with laser energy to generate controlled propulsion for microchip transfer, designing and experimentally validating a system that converts laser energy into precise chip motion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research forms the foundation for controlled implementation of a water–laser based semiconductor handling system into practice.
+  The AVL Drivingcube is a vehicle-in-the-loop (ViL) validation system for ADAS and autonomous driving features, allowing real, ready to drive vehicles to be tested in a safe, virtual, and simulated environment. For the AVL Drivingcube vehicle dynamics testbed, I developed a mechanical actuator system capable of simulating real steering forces on heavy trucks without physically turning the wheels. The project required designing a high stiffness mechanism capable of handling loads up to 30 kN while remaining mountable within severe packaging constraints. Through iterative concept evaluation, structural FEM validation, and mechanical system design, I developed a scalable actuator architecture enabling controlled and repeatable steering simulations for advanced vehicle testing.
 
 skills:
-  - Micro systems design
-  - Multiphysics simulation
-  - System parameter optimization
-  - Experimental validation & lab testing
-  - Concept to prototype R&D execution
-  - Opto mechanical design
-  - Laser system design
+  - Mechanical system architecture
+  - Concept development & evaluation
+  - Force flow analysis
+  - FEM structural & frequency analysis
+  - Mechanism design
+  - Vehicle integration design
+  - Design for stiffness & compliance
 
-main-image: "/Cover page 4.jpg"
+
+main-image: "AVL-drivingcube.jpg"
 ---
 
 
