@@ -1,54 +1,77 @@
 ---
 layout: post
-title: In house large scale 3D printer
+title: In-house Large Scale 3D Printer
 description: |
-  Microchip handling systems face scaling limitations as chips shrink and production speeds increase. During my research, I developed a new handling method that combines capillary forces from water droplets with laser energy to generate controlled propulsion for microchip transfer, designing and experimentally validating a system that converts laser energy into precise chip motion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research forms the foundation for controlled implementation of a water–laser based semiconductor handling system into practice.
+  When our research team at the Royal Netherlands Military Police lost the ability to print large scale parts due to an unreliable industrial printer, I led a full system redesign using only the existing frame as a starting point. By developing a new electronics architecture, motion system, and control software stack, I transformed a non functional machine into a reliable large manufacturing platform. The redesign increased usable print volume by over 500%, enabled secure network operation, and created a scalable platform capable of further expansion.
 
 skills:
-  - Micro systems design
-  - Multiphysics simulation
-  - System parameter optimization
-  - Experimental validation & lab testing
-  - Concept to prototype R&D execution
-  - Opto mechanical design
-  - Laser system design
+  - System architecture & integration
+  - Mechatronic system design
+  - Embedded electronics & wiring design
+  - Firmware & motion control
+  - Large-scale additive manufacturing
+  - Hardware–software co-optimization
+  - Reliability engineering
 
-main-image: "/Cover page 4.jpg"
+main-image: "/Printer 3.jpeg"
 ---
 
 
 
+
 ---
-  **Full research under embargo until 14/01/2028, key details may be missing**
-
-# Problem statement
-As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
 
 
+# Engineering Context
+Large scale additive manufacturing was critical for our research activities, yet the existing industrial 3D printer had gradually become unusable. Poor print quality, unreliable operation, and difficult usability meant the system was ultimately abandoned. This created a major limitation: our maximum printable volume dropped from roughly 0.5 m³ to 0.05 m³, significantly restricting what we could build and test.
+
+Rather than replacing the machine, we opted to rebuild it, since no good alternatives were available on the market for our applications. The objective was not simply repair, it was to transform the unused platform into a reliable, high performance system that could be operated safely through an encrypted server network while providing industrial print stability and speed.
 
 
-The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapour inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundry system.
+## Engineering Challenge
+Only the mechanical frame was worth keeping. Everything responsible for performance (e.g. motion hardware, electronics, control architecture, and software) needed to be redesigned.
+
+This meant solving several problems simultaneously:
+- Designing a new electrical and control architecture inside existing mechanical constraints
+- Integrating custom and off the shelf hardware into a cohesive system
+- Developing stable motion control for a large moving mass
+- Achieving high speed printing without sacrificing dimensional accuracy
+- Creating a system simple enough for daily research use
+
+The real challenge was that hardware and software decisions were deeply coupled. Changing one parameter often required redesigning another part of the system.
 
 
-## Methodology
-The project combined multiphysics simulation and experimental validation.
+## System Reconstruction
+The project started with a complete teardown of the original machine. All legacy electronics and motion components were removed to create a clean design baseline. From there, I developed a new system architecture defining power distribution, motion control, sensing, and communication. Custom hardware components were designed to integrate motors, extruders, cooling systems, and control electronics into the existing frame while improving maintainability and accessibility.
 
-A heat transfer model in COMSOL was developed to simulate pulsed Gaussian laser heating interating on the water ranging in parameters. The model mapped temperature evolution and identified the balance between sufficient heating and material damage.
-
-Experimentally, I characterized laser fluence limits. By varying spot size and exposure conditions, I established a safe operating window in which explosive evaporation occurs without system or chip damage. High speed imaging (4000 fps) was used to analyze droplet dynamics and die motion, while post process microscopy was used to validate the surface integrity.
+On the software side, I built the control stack using Klipper firmware running on a Raspberry Pi, enabling distributed processing and flexible tuning of motion behavior. This allowed precise synchronization between components while supporting secure network-based operation for remote job deployment. At this stage, the printer could move, but high performance required a deeper iterative process.
 
 
-## Key findings
-For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 10 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. 
+## Hardware–Software Optimization
+Once operational, the project shifted into an intensive optimization phase where mechanical design and firmware tuning evolved together. Large scale motion introduces the amplyfied effect of challenges from desktop printing: structural resonance, inertia driven vibration, flow instability, and accumulated positional errors. Solving these required simultaneous adjustments to hardware geometry and control algorithms.
 
-## Engineering contribution
-This work bridges thermodynamics, laser–material interaction, and microscale fluid dynamics to establish a physically validated propulsion mechanism. It translates theoretical superheating limits into a practical, experimentally confirmed parameter set suitable for system integration. The results provide a foundation for vacuum free microchip handling systems and scalable propulsion system for high throughput semiconductor manufacturing.
+Key areas of optimization included:
+- Resonance analysis and input shaping
+- Motion acceleration tuning
+- Flow rate calibration at high speed
+- Bed probing and large-area leveling strategies
+- Mechanical redesign of critical components for stability
 
+The process involved continuous iteration: redesigning hardware parts in CAD, validating prints, adjusting firmware parameters, and repeating until performance targets were met.
 
+## Performace Outcome
+The final system transformed an abandoned machine into a reliable research tool with substantial performance gains:
 
+- 0.1 mm dimensional tolerance
+- 30 cm²/s material flow capability
+- 12,000 mm/s² maximum acceleration
+- 0.3 mm maximum bed deviation across 600 × 600 mm
+- ~0.25 m³ usable build volume
 
+This represents more than a 500% increase in printable volume, with identified upgrade paths to reach approximately 1000% through minor future modifications.
 
-
+## Engineering Impact
+This project demonstrates system engineering; not only designing parts or software, but rebuilding and integrating an entire manufacturing platform from first principles. By combining mechanical redesign, electronics architecture, firmware development, and performance optimization, I converted a non functional machine into a maintainable production system. The result restored large scale additive manufacturing capability for the team.
 
 
 
