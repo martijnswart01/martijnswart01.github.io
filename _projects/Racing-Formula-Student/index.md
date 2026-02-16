@@ -79,5 +79,5 @@ This project strengthened my ability to bridge detailed engineering work with sy
 
 To learn more about the Formula Student Team Delft, please visit [our page](https://www.fsteamdelft.nl/). To check the speed of our cars, check out the following video:
 
-{% include youtube-video.html id="{TjthTCL4c4w}" autoplay= "false"%}
+{% include youtube-video.html id="TjthTCL4c4w" autoplay= "false"%}
 
