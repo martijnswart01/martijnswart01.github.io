@@ -76,3 +76,8 @@ My two-year trajectory at Formula Student Team Delft reflects the progression fr
 
 This project strengthened my ability to bridge detailed engineering work with system-level integration, a mindset essential for complex real-world engineering challenges.
 
+
+To learn more about the Formula Student Team Delft, please visit [our page](https://www.fsteamdelft.nl/). To check the speed of our cars, check out the following video:
+
+{% include youtube-video.html id="{TjthTCL4c4w}" autoplay= "false"%}
+
