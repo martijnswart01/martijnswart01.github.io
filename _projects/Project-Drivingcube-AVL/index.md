@@ -20,31 +20,71 @@ main-image: "AVL-drivingcube.jpg"
 
 
 ---
-  **Full research under embargo until 14/01/2028, key details may be missing**
+# Engineering Context
+The AVL Drivingcube is a vehicle dynamics test platform used to evaluate truck behaviour under controlled laboratory conditions. However, when trucks are placed on a dyno or chassis testbed, the wheels cannot physically steer, making it impossible to study steering effort or driver input effects.
 
-# Problem statement
-As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
-
-
+The goal of this project was to create a ViL actuator system capable of simulating real steering forces while mechanically decoupling the wheels. This required replacing the traditional drag link with a custom mechanical system that reproduces steering effort without affecting wheel position.
 
 
-The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapour inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundry system.
+## Engineering Challenge
+The problem quickly evolved from a simple mechanism into a multi constraint problem:
+
+- Simulate realistic steering loads up to 30 kN
+- Operate within very limited space beneath the truck
+- Maintain structural stiffness under high dynamic loads
+- Avoid transferring harmful forces into the testbed
+- Support multiple truck geometries
+- Allow installation and maintenance accessibility
+
+The system had to behave as if the truck was steering on the road, while physically remaining fixed on the test platform.
 
 
-## Methodology
-The project combined multiphysics simulation and experimental validation.
+## Concept Strategy
+Early development revealed that force flow management was the defining problem of the project. Two fundamentally different concepts were evaluated:
 
-A heat transfer model in COMSOL was developed to simulate pulsed Gaussian laser heating interating on the water ranging in parameters. The model mapped temperature evolution and identified the balance between sufficient heating and material damage.
+### Platform Concept
 
-Experimentally, I characterized laser fluence limits. By varying spot size and exposure conditions, I established a safe operating window in which explosive evaporation occurs without system or chip damage. High speed imaging (4000 fps) was used to analyze droplet dynamics and die motion, while post process microscopy was used to validate the surface integrity.
+A rigid platform mounted partly to the ground, allowing controlled translations through bearings and springs.
+
+Advantages: 
+
+- High stiffness
+- Simple structural logic
+
+Limitations
+
+- Heavy and difficult to install
+- Limited compatibility across testbeds
+- Poor packaging for chassis test environments
+
+### Closed Force Loop Concept
+
+Inspired by steering simulation systems used in passenger vehicles, I designed a closed force loop architecture where all loads remain inside the system and no major forces transfer to the ground.
+
+This approach:
+
+- Reduced weight dramatically
+- Improved installation flexibility
+- Allowed use across multiple testbeds
+- Created a mechanically cleaner load path
+
+Selecting this concept defined the rest of the project and shifted focus toward achieving stiffness through structural design rather than external supports. 
 
 
-## Key findings
-For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 10 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. 
+## Mechanism Development
+With the system architecture defined, the next challenge was translating the drag-link motion into actuator input while keeping the actuator close to the mounting points to maximize rigidity. Multiple translation mechanisms were explored, where the final solution combined a Scott-Russell linkage with a lever system, enabling motion redirection while maintaining compact packaging and favorable weight distribution. This allowed the actuator to remain near the structural core, significantly improving system stiffness.
 
-## Engineering contribution
-This work bridges thermodynamics, laser–material interaction, and microscale fluid dynamics to establish a physically validated propulsion mechanism. It translates theoretical superheating limits into a practical, experimentally confirmed parameter set suitable for system integration. The results provide a foundation for vacuum free microchip handling systems and scalable propulsion system for high throughput semiconductor manufacturing.
 
+## Structural Engineering & Validation
+As design complexity increased, structural dynamics became the critical risk factor. Initial structures proved insufficient, as eigenfrequency targets could not be achieved. I redesigned the framework using an X-profile structural architecture, increasing stiffness to weight ratio while preserving modular assembly.
+
+FEM analysis guided each design iteration, focusing on stress distribution under peak steering forces, structural rigidity and frequency response. The final configuration achieved a minimum eigenfrequency of 105 Hz, exceeding the target requirement of 100 Hz and validating the concept for further development
+
+## Performace Outcome
+The final concept produced a mechanically robust steering simulation system capable of replicating steering forces without wheel movement, maintaining a closed internal force loop, supporting high load truck configurations, integrating within severe packaging constraints and providing a modular basis for future actuator integration. The design established a validated mechanical foundation for steering effort simulation on heavy vehicles within the Drivingcube ecosystem
+
+## Engineering Impact
+This project demonstrates high-level mechanical systems engineering, translating abstract principles into real hardware whilst balancing stiffness, compliance, and packaging simultaneously. Rather than designing a single mechanism, my work established a complete structural and kinematic framework that allows realistic steering simulation under controlled laboratory conditions. 
 
 
 
