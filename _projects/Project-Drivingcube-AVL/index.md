@@ -14,7 +14,7 @@ skills:
   - Design for stiffness & compliance
 
 
-main-image: "AVL-drivingcube.jpg"
+main-image: "/AVL-drivingcube.jpg"
 ---
 
 
