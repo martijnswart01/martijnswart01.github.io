@@ -7,5 +7,5 @@ description: |
 skills:
   - Leadership
 
-main-image: "/DC11.jpeg"
+main-image: "/assets/images/other/DC11.jpeg"
 ---
