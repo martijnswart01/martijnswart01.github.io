@@ -168,6 +168,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  leadership:
+    output: true
+    permalink: /leadership/:path/
 
 
 markdown: kramdown
