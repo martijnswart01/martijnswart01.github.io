@@ -1,54 +1,49 @@
 ---
 layout: post
-title: Visualising ancient pigments of 4000 year old Egyptian stone
+title: Visualising Pigments on Ancient Stela of Sehetepibreanch (4000 B.C.)
 description: |
-  Microchip handling systems face scaling limitations as chips shrink and production speeds increase. During my research, I developed a new handling method that combines capillary forces from water droplets with laser energy to generate controlled propulsion for microchip transfer, designing and experimentally validating a system that converts laser energy into precise chip motion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research forms the foundation for controlled implementation of a water–laser based semiconductor handling system into practice.
+  As part of a multidisciplinary research project at TU Delft, I helped develop an imaging methodology to visualise hidden pigment traces on an ancient Egyptian limestone stela. By combining hyperspectral imaging, contrast-enhanced photography, and microscopy, we created a validated workflow that revealed previously unclear pigment structures without physically altering the artefact. The work demonstrates how engineering-based imaging methods can be applied to cultural heritage research.
 
 skills:
-  - Micro systems design
-  - Multiphysics simulation
-  - System parameter optimization
-  - Experimental validation & lab testing
-  - Concept to prototype R&D execution
-  - Opto mechanical design
-  - Laser system design
+  - Experimental method development
+  - Imaging & data analysis
+  - Hyperspectral imaging (RIS)
+  - Signal & contrast enhancement
+  - Scientific validation & testing
+  - Multidisciplinary research collaboration
 
-main-image: "/Cover page 4.jpg"
+main-image: "/stela_cover.png"
 ---
 
 
 
 ---
-  **Full research under embargo until 14/01/2028, key details may be missing**
+## Engineering Context
+Ancient Egyptian artefacts often contain pigment traces that are no longer visible to the human eye due to ageing and surface degradation. Recovering this information is essential for understanding historical context, craftsmanship, and symbolism, but physical restoration is often impossible. The challenge of this project was to develop a non destructive imaging method capable of revealing these hidden pigments digitally.
 
-# Problem statement
-As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
+Within a research project conducted at TU Delft in collaboration with the Rijksmuseum van Oudheden, our goal was to develop a non-invasive imaging methodology capable of revealing hidden pigment traces on the Stela of Sehetepibreanch, a limestone artefact dating from approximately 1850 BC.
 
+## Engineering Challenge
+The complexity of this project was not in capturing images, but in creating a workflow that could reliably separate real pigment information from surface texture, shadows, and noise. No single imaging method was sufficient on its own. The project therefore became a systems-engineering exercise in combining multiple technologies into a validated methodology.
 
-The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapour inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundry system.
+To reduce risk and establish reliable parameters, we first designed a mock-up limestone sample containing known pigments. This allowed us to experiment with imaging settings, verify results, and understand how degradation influences measurable signals before moving to the real artefact.
 
+## Method Development
+The core of the project was building a coherent workflow from complementary imaging techniques. Contrast-enhanced photography was used as a fast way to amplify colour differences, while hyperspectral imaging provided wavelength data that could confirm whether observed features were actually pigment related.
 
-## Methodology
-The project combined multiphysics simulation and experimental validation.
+By analysing reflectance behaviour across the visible and near infrared spectrum, it became possible to isolate spectral signatures corresponding to haematite red and bone black pigments. Microscopy was used as a verification step to confirm uncertain regions and validate the findings from the imaging methods. The key engineering step was defining how these techniques interacted rather than treating them separately. Contrast enhancement provided rapid visual insights, while hyperspectral analysis added physical validation, allowing the two methods to reinforce each other.
 
-A heat transfer model in COMSOL was developed to simulate pulsed Gaussian laser heating interating on the water ranging in parameters. The model mapped temperature evolution and identified the balance between sufficient heating and material damage.
+## Results
 
-Experimentally, I characterized laser fluence limits. By varying spot size and exposure conditions, I established a safe operating window in which explosive evaporation occurs without system or chip damage. High speed imaging (4000 fps) was used to analyze droplet dynamics and die motion, while post process microscopy was used to validate the surface integrity.
+Applying the developed workflow to the Stela revealed pigment structures that were barely visible to the naked eye. Red illustrations became clearer, and black hieroglyphic markings could be interpreted more confidently. The resulting data enabled a partial digital reconstruction of the original pigment layout without any physical intervention on the artefact.
 
+The combination of imaging methods proved more powerful than either technique alone, demonstrating that engineering-driven experimental design can significantly enhance scientific and archaeological analysis.
 
-## Key findings
-For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 10 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. 
+## Engineering Contribution
+This project strengthened my ability to approach complex problems through structured experimentation and validation. Rather than focusing on a single tool, the work required designing an entire methodology that balanced experimental constraints, signal interpretation, and practical usability. It demonstrated how engineering principles (calibration, verification, and system integration) can be applied outside traditional mechanical domains, translating imaging physics into a repeatable workflow that delivers measurable scientific value.
 
-## Engineering contribution
-This work bridges thermodynamics, laser–material interaction, and microscale fluid dynamics to establish a physically validated propulsion mechanism. It translates theoretical superheating limits into a practical, experimentally confirmed parameter set suitable for system integration. The results provide a foundation for vacuum free microchip handling systems and scalable propulsion system for high throughput semiconductor manufacturing.
+Our work got a lot of recognition, being published into [two separate magazines](https://drive.google.com/drive/folders/1W4SvzQIozi6EjPJxkOIiyBhg_zWm05CO) and getting a LinkedIn recognition from both the [TU Delft](https://www.linkedin.com/posts/tudelft_university-study-students-ugcPost-7199655813412532224-MrC7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCj9v8BIou6JYT8KP7FD5Kz5xszQgHQJq8) as well as the [Mechanical Engineering faculty](https://www.linkedin.com/posts/tu-delft-mechanical-engineering_mechanicalengineering-technology-ugcPost-7193245572621905921-_sfb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCj9v8BIou6JYT8KP7FD5Kz5xszQgHQJq8). We were also awarded the **2023 TU Delft Best Thesis Presentation award** for our presentation.
 
-
-
-
-
-
-
-
-
+To read more about the ancient Stela and the process of our research, please read our [student stories](https://www.tudelft.nl/en/me/education/student-stories/students-make-faded-4000-year-old-egyptian-paintings-visible-again).
 
 
