@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Laser Based Chip Propulsion
+title: In house large scale 3D printer
 description: |
   Microchip handling systems face scaling limitations as chips shrink and production speeds increase. During my research, I developed a new handling method that combines capillary forces from water droplets with laser energy to generate controlled propulsion for microchip transfer, designing and experimentally validating a system that converts laser energy into precise chip motion. I performed coupled simulations and lab experiments to optimize system parameters, demonstrating a scalable approach that increases chip handling speed by over 60%, and that can be applied to a wide scale of chip sizes. This research forms the foundation for controlled implementation of a water–laser based semiconductor handling system into practice.
 
