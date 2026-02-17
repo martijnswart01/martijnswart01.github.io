@@ -5,14 +5,7 @@ description: |
   The AVL Drivingcube is a vehicle-in-the-loop (ViL) validation system for ADAS and autonomous driving features, allowing real, ready to drive vehicles to be tested in a safe, virtual, and simulated environment. For the AVL Drivingcube vehicle dynamics testbed, I developed a mechanical actuator system capable of simulating real steering forces on heavy trucks without physically turning the wheels. The project required designing a high stiffness mechanism capable of handling loads up to 30 kN while remaining mountable within severe packaging constraints. Through iterative concept evaluation, structural FEM validation, and mechanical system design, I developed a scalable actuator architecture enabling controlled and repeatable steering simulations for advanced vehicle testing.
 
 skills:
-  - Mechanical system architecture
   - Concept development & evaluation
-  - Force flow analysis
-  - FEM structural & frequency analysis
-  - Mechanism design
-  - Vehicle integration design
-  - Design for stiffness & compliance
-
 
 main-image: "/AVL-drivingcube.jpg"
 ---
