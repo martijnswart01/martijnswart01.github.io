@@ -5,12 +5,7 @@ description: |
   As part of a multidisciplinary research project at TU Delft, I helped develop an imaging methodology to visualise hidden pigment traces on an ancient Egyptian limestone stela. By combining hyperspectral imaging, contrast-enhanced photography, and microscopy, we created a validated workflow that revealed previously unclear pigment structures without physically altering the artefact. The work demonstrates how engineering-based imaging methods can be applied to cultural heritage research.
 
 skills:
-  - Experimental method development
   - Imaging & data analysis
-  - Hyperspectral imaging (RIS)
-  - Signal & contrast enhancement
-  - Scientific validation & testing
-  - Multidisciplinary research collaboration
 
 main-image: "/stela_cover.png"
 ---
