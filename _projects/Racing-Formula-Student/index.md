@@ -6,13 +6,6 @@ description: |
 
 skills:
   - Motorsport engineering
-  - Mechanical design (CATIA)
-  - Rapid prototyping
-  - Vehicle system integration
-  - Drivetrain & brake system design
-  - CNC manufacturing & composite fabrication
-  - Low voltage electronics integration
-  - Testing & validation
 
 main-image: "/formula_student_cover.jpg"
 ---
