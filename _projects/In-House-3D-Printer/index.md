@@ -5,13 +5,7 @@ description: |
   When our research team at the Royal Netherlands Military Police lost the ability to print large scale parts due to an unreliable industrial printer, I led a full system redesign using only the existing frame as a starting point. By developing a new electronics architecture, motion system, and control software stack, I transformed a non functional machine into a reliable large manufacturing platform. The redesign increased usable print volume by over 500%, enabled secure network operation, and created a scalable platform capable of further expansion.
 
 skills:
-  - System architecture & integration
   - Mechatronic system design
-  - Embedded electronics & wiring design
-  - Firmware & motion control
-  - Large-scale additive manufacturing
-  - Hardware–software co-optimization
-  - Reliability engineering
 
 main-image: "/Printer 3.jpeg"
 ---
