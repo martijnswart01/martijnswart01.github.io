@@ -37,8 +37,9 @@ Experimentally, I characterized laser fluence limits, and quantified our system 
 For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 0.25 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. This is a revolutionary finding for the chip handling processes, highlighting a handling solution for ultrasmall microchips. 
 
 <video controls autoplay loop muted width="100%">
-  <source src="/chip-propulsion-4000fps-4x.mp4" type="video/mp4">
+  <source src="Chip Propulsion (4000 fps, 4x zoom).mp4" type="video/mp4">
 </video>
+
 
 ## Engineering contribution
 This work bridges thermodynamics, laser–material interaction, and microscale fluid dynamics to establish a physically validated propulsion mechanism. It translates theoretical superheating limits into a practical, experimentally confirmed parameter set suitable for system integration. The results provide a foundation for vacuum free microchip handling systems and scalable propulsion system for high throughput semiconductor manufacturing.
