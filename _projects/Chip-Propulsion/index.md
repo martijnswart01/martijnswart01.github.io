@@ -37,7 +37,7 @@ Experimentally, I characterized laser fluence limits, and quantified our system 
 For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 0.25 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. This is a revolutionary finding for the chip handling processes, highlighting a handling solution for ultrasmall microchips. 
 
 <video controls autoplay loop muted width="100%">
-  <source src="/assets/videos/Chip-Propulsion2.mp4" type="video/mp4">
+  <source src="/assets/videos/Chip-Propulsion.mp4" type="video/mp4">
 </video>
 
 
