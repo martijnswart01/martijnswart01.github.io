@@ -17,13 +17,13 @@ main-image: "/Cover page 4.jpg"
   **Full research under embargo until 14/01/2028, key details may be missing**
 
 # Problem statement
-As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, for the TU Delft and ITEC Semiconducor, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. 
+As microchips continue to shrink and production speeds increase, conventional vacuum pick-and-place systems face scaling limitations due to nozzle size constraints and clogging risks. In this project, for the TU Delft and ITEC Semiconducor, I developed and validated a laser driven microchip propulsion mechanism that replaces vacuum gripping with a capillary adhesion using a water droplet, and a laser induced explosive evaporation of the droplet to propel the chip. A schematic view of this process is given below.
 
 
 {% include image-gallery.html images="Laser pick and place.png" height="200" %} 
 
 
-The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapor inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundary system.
+The goal was to identify a safe and repeatable concept in which a laser rapidly generates water vapor inside of the water droplet, generating pressure enough to propel a 0.1 mm² die. The strict constraint is to do this without damaging the die or the boundary system. To give an indication of the size of the microchips used, below is a picture of a microchip sample next to a human hair.
 
 {% include image-gallery.html images="lucas haar en chip.jpg" height="200" %} 
 
@@ -35,6 +35,8 @@ Experimentally, I characterized laser fluence limits, and quantified our system 
 
 ## Key findings
 For the parameters, a robust operational window was identified. Within this window, repeatable die propulsion was achieved in under 0.25 ms with negligible lateral displacement and no observable bulk die damage. The study proved that controlled explosive evaporation can function as a reliable micro actuation mechanism without transitioning into destructive laser material interaction. This is a revolutionary finding for the chip handling processes, highlighting a handling solution for ultrasmall microchips. 
+
+The video below highlights a successful experiment in which a micro thin layer of water is explosively evaporated by a laser source, propelling a microchip at 50 g. This results in a 60% increase in handling speed compared to conventional vacuum based pick and place systems. The footage was recorded at 4,000 frames per second with 20× magnification.
 
 <video controls autoplay loop muted width="100%">
   <source src="/assets/videos/Chip-Propulsion3.mp4" type="video/mp4">
