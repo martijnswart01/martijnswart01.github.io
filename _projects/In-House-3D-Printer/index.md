@@ -50,7 +50,12 @@ The final system transformed an abandoned machine into a reliable research tool 
 - 0.3 mm maximum bed deviation across 600 × 600 mm
 - ~0.25 m³ usable build volume
 
-This represents more than a 500% increase in printable volume, whilst printing high quality prints. Next to this, the redesign comes with identified upgrade paths to reach approximately 1000% through minor future modifications.
+This represents more than a 500% increase in printable volume, whilst printing high quality prints. Next to this, the redesign comes with identified upgrade paths to reach approximately 1000% through minor future modifications. Below is a video of the printer in progress of a part.
+
+<video controls autoplay loop muted width="100%">
+  <source src="/Video printer 1.mp4" type="video/mp4">
+</video>
+
 
 ## Engineering Impact
 This project demonstrates system engineering; not only designing parts or software, but rebuilding and integrating an entire manufacturing platform from first principles. By combining mechanical redesign, electronics architecture, firmware development, and performance optimization, I converted a non functional machine into a maintainable production system. The result restored large scale additive manufacturing capability for the team.
