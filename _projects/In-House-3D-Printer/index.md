@@ -23,14 +23,7 @@ Rather than replacing the machine, we opted to rebuild it, since no good alterna
 
 
 ## Engineering Challenge
-Only the mechanical frame was worth keeping. Everything responsible for performance (e.g. motion hardware, electronics, control architecture, and software) needed to be redesigned.
-
-This meant solving several problems simultaneously:
-- Designing a new electrical and control architecture inside existing mechanical constraints
-- Integrating custom and off the shelf hardware into a cohesive system
-- Developing stable motion control for a large moving mass
-- Achieving high speed printing without sacrificing dimensional accuracy
-- Creating a system simple enough for daily research use
+Only the mechanical frame was worth keeping. Everything responsible for performance (e.g. motion hardware, electronics, control architecture, and software) needed to be redesigned. The challenge extended beyond component replacement. Mechanical constraints of the existing structure limited integration freedom, while hardware and software decisions were tightly coupled. Motion dynamics, control algorithms, structural stiffness, and extrusion behavior influenced one another. Designing the system therefore required a holistic approach, balancing electrical architecture, mechanical redesign, and firmware development within a single integrated framework.
 
 The real challenge was that hardware and software decisions were deeply coupled. Changing one parameter often required redesigning another part of the system.
 
@@ -44,17 +37,12 @@ On the software side, I built the control stack using Klipper firmware running o
 ## Hardware–Software Optimization
 Once operational, the project shifted into an intensive optimization phase where mechanical design and firmware tuning evolved together. Large scale motion introduces the amplyfied effect of challenges from desktop printing: structural resonance, inertia driven vibration, flow instability, and accumulated positional errors. Solving these required simultaneous adjustments to hardware geometry and control algorithms.
 
-Key areas of optimization included:
-- Resonance analysis and input shaping
-- Motion acceleration tuning
-- Flow rate calibration at high speed
-- Bed probing and large-area leveling strategies
-- Mechanical redesign of critical components for stability
+Through iterative cycles of CAD redesign, experimental validation, and firmware tuning, the system was progressively optimized. Resonance behavior was analysed and mitigated using input shaping techniques. Acceleration profiles were refined to balance speed and accuracy. Flow calibration and large-area bed leveling strategies were developed to ensure dimensional consistency across the 600 × 600 mm build platform.
 
-The process involved continuous iteration: redesigning hardware parts in CAD, validating prints, adjusting firmware parameters, and repeating until performance targets were met.
+Rather than treating mechanical and digital subsystems separately, performance was improved by continuously adjusting and iterating both domains at the same time. This included redesigning hardware parts in CAD, validating prints, adjusting firmware parameters, and repeating until performance targets were met.
 
 ## Performace Outcome
-The final system transformed an abandoned machine into a reliable research tool with substantial performance gains:
+The final system transformed an abandoned machine into a reliable research tool with substantial performance:
 
 - 0.1 mm dimensional tolerance
 - 30 cm²/s material flow capability
@@ -62,7 +50,7 @@ The final system transformed an abandoned machine into a reliable research tool 
 - 0.3 mm maximum bed deviation across 600 × 600 mm
 - ~0.25 m³ usable build volume
 
-This represents more than a 500% increase in printable volume, with identified upgrade paths to reach approximately 1000% through minor future modifications.
+This represents more than a 500% increase in printable volume, whilst printing high quality prints. Next to this, the redesign comes with identified upgrade paths to reach approximately 1000% through minor future modifications.
 
 ## Engineering Impact
 This project demonstrates system engineering; not only designing parts or software, but rebuilding and integrating an entire manufacturing platform from first principles. By combining mechanical redesign, electronics architecture, firmware development, and performance optimization, I converted a non functional machine into a maintainable production system. The result restored large scale additive manufacturing capability for the team.
