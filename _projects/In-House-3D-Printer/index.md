@@ -31,11 +31,11 @@ The real challenge was that hardware and software decisions were deeply coupled.
 ## System Reconstruction
 The project started with a complete teardown of the original machine. All legacy electronics and motion components were removed to create a clean design baseline. From there, I developed a new system architecture defining power distribution, motion control, sensing, and communication. Custom hardware components were designed to integrate motors, extruders, cooling systems, and control electronics into the existing frame while improving maintainability and accessibility.
 
-{% include image-gallery.html images="Printer 6.jpeg" height="400" %} 
+{% include image-gallery.html images="Printer 6.jpeg" height="400" %} {% include image-gallery.html images="Printer 5.jpeg" height="400" %} 
 
 On the software side, I built the control stack using Klipper firmware running on a Raspberry Pi, enabling distributed processing and flexible tuning of motion behavior. This allowed precise synchronization between components while supporting secure network-based operation for remote job deployment. At this stage, the printer could move, but high performance required a deeper iterative process.
 
-{% include image-gallery.html images="Printer 5.jpeg" height="400" %} 
+
 
 ## Hardware–Software Optimization
 Once operational, the project shifted into an intensive optimization phase where mechanical design and firmware tuning evolved together. Large scale motion introduces the amplyfied effect of challenges from desktop printing: structural resonance, inertia driven vibration, flow instability, and accumulated positional errors. Solving these required simultaneous adjustments to hardware geometry and control algorithms.
