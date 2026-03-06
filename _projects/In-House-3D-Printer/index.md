@@ -29,7 +29,7 @@ The real challenge was that hardware and software decisions were deeply coupled.
 
 
 ## System Reconstruction
-The project started with a complete teardown of the original machine. All legacy electronics and motion components were removed to create a clean design baseline. From there, I developed a new system architecture defining power distribution, motion control, sensing, and communication. Custom hardware components were designed to integrate motors, extruders, cooling systems, and control electronics into the existing frame while improving maintainability and accessibility.
+The project started with a complete teardown of the original machine. Most original electronics and motion components were removed to create a clean design baseline. From there, I developed a new system architecture defining power distribution, motion control, sensing, and communication. Custom hardware components were designed to integrate motors, extruders, cooling systems, and control electronics into the existing frame while improving maintainability and accessibility.
 
 <div style="display: flex; gap: 5px;">
 
