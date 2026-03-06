@@ -31,7 +31,7 @@ The real challenge was that hardware and software decisions were deeply coupled.
 ## System Reconstruction
 The project started with a complete teardown of the original machine. All legacy electronics and motion components were removed to create a clean design baseline. From there, I developed a new system architecture defining power distribution, motion control, sensing, and communication. Custom hardware components were designed to integrate motors, extruders, cooling systems, and control electronics into the existing frame while improving maintainability and accessibility.
 
-{% include image-gallery.html images="Printer 5.jpeg" height="200" %} 
+{% include image-gallery.html images="Printer 5.jpeg" height="400" %} 
 
 On the software side, I built the control stack using Klipper firmware running on a Raspberry Pi, enabling distributed processing and flexible tuning of motion behavior. This allowed precise synchronization between components while supporting secure network-based operation for remote job deployment. At this stage, the printer could move, but high performance required a deeper iterative process.
 
@@ -54,7 +54,7 @@ The final system transformed an abandoned machine into a reliable research tool 
 
 This represents more than a 500% increase in printable volume, whilst printing high quality prints. Next to this, the redesign comes with identified upgrade paths to reach approximately 1000% through minor future modifications. Below is a video of the printer in progress of a part.
 
-<video controls autoplay loop muted width="20%">
+<video controls autoplay loop muted width="30%">
   <source src="\_projects\In-House-3D-Printer\Video printer 1.mp4" type="video/mp4">
 </video>
 
