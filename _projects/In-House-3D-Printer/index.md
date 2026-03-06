@@ -64,7 +64,7 @@ This represents more than a 500% increase in printable volume, whilst printing h
 This project demonstrates system engineering; not only designing parts or software, but rebuilding and integrating an entire manufacturing platform from first principles. By combining mechanical redesign, electronics architecture, firmware development, and performance optimization, I converted a non functional machine into a maintainable production system. The result restored large scale additive manufacturing capability for the team.
 
 
-<video controls autoplay loop muted width="30%">
+<video controls autoplay loop muted width="80%">
   <source src="\_projects\In-House-3D-Printer\Video printer 2.mp4" type="video/mp4">
 </video>
 
