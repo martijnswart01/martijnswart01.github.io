@@ -735,156 +735,21 @@ footer p {
 
 /*     Responsive styles     */
 /* SECTION: EDUCATION */
+/* SECTION: EDUCATION */
 .education-section {
     margin-bottom: 100px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
 }
 
 .education-section h2 {
     font-size: 34px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     padding: 0 10px;
 }
 
-.education-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 25px;
-    width: 100%;
-}
-
-.education-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--background-color);
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-                0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.education-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
-}
-
-.education-image-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3/1;
-    overflow: hidden;
-}
-
-.education-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.education-card:hover .education-image {
-    transform: scale(1.03);
-}
-
-.education-image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
-    padding: 16px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.education-university-badge {
-    background-color: var(--link-color);
-    color: #fff;
-    font-size: 0.8em;
-    font-weight: 600;
-    padding: 3px 12px;
-    border-radius: 20px;
-    letter-spacing: 0.04em;
-}
-
-.education-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-}
-
-.education-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.education-degree {
-    font-size: 1.4em;
-    font-weight: 600;
-    color: var(--text-color);
-    margin: 0;
-}
-
-.education-field {
-    font-size: 1em;
-    color: var(--link-color);
-    margin: 2px 0 0 0;
-    font-weight: 500;
-}
-
-.education-year-badge {
-    background-color: var(--light-background-color);
-    color: var(--text-color);
-    font-size: 0.8em;
-    padding: 4px 12px;
-    border-radius: 20px;
-    white-space: nowrap;
-    font-weight: 500;
-    flex-shrink: 0;
-}
-
-.education-institution {
-    font-size: 0.9em;
-    color: var(--text-color);
-    opacity: 0.6;
-    margin: 0;
-}
-
-.education-description {
-    font-size: 0.9em;
-    color: var(--text-color);
-    line-height: 1.6;
-    margin: 0;
-}
-
-.education-courses {
-    margin-top: 4px;
-}
-
-.education-course-label {
-    font-size: 0.8em;
-    font-weight: 600;
-    color: var(--text-color);
-    opacity: 0.5;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.education-course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+.education-item {
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 .course-tag {
