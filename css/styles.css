@@ -765,7 +765,7 @@ footer p {
 
 /* Bigger logos (about 2x) */
 .edu-logo {
-    width: 110px;   /* was ~60px → now ~2x */
+    width: 200px;   /* was ~60px → now ~2x */
     height: auto;
     flex-shrink: 0; /* prevents squishing */
 }
