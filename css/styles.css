@@ -735,6 +735,7 @@ footer p {
 
 /*     Responsive styles     */
 /* SECTION: EDUCATION */
+/* SECTION: EDUCATION */
 .education-section {
     margin: 50px 0 100px 0;
 }
@@ -745,42 +746,45 @@ footer p {
     padding: 0 10px;
 }
 
-/* Each item as a horizontal card */
 .education-item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 
-    padding: 15px;
+    padding: 18px;
     margin-bottom: 20px;
 
     border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Subtle hover effect */
 .education-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* Logo styling */
+/* Bigger logos (about 2x) */
 .edu-logo {
-    width: 60px;
+    width: 110px;   /* was ~60px → now ~2x */
     height: auto;
+    flex-shrink: 0; /* prevents squishing */
 }
 
-/* Text container */
+/* Text styling */
 .education-text h3 {
-    font-size: 20px;   /* Bigger = more emphasis */
+    font-size: 22px;
     margin: 0;
     font-weight: 600;
 }
 
 .education-text p {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
-    margin-top: 5px;
+    margin-top: 6px;
+}
+
+.education-item:not(:last-child) {
+    border-bottom: 1px solid #eee;
 }
 
 .course-tag {
