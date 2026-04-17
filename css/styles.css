@@ -947,3 +947,28 @@ footer p {
       
 }
 
+.education-section {
+    padding: 60px 20px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item h3 {
+    margin: 0 0 4px;
+}
+
+.education-institution {
+    font-weight: 600;
+    margin: 0;
+}
+
+.education-year {
+    color: gray;
+    margin: 0;
+}
